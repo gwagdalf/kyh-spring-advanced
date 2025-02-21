@@ -17,6 +17,8 @@ jobs:
         distribution: 'temurin'
     - name: Setup Gradle without cache
       uses: gradle/actions/setup-gradle@v4
+      with:
+        cache-disabled: true
 #    - name: Gradle Caching
 #      uses: actions/cache@v4
 #      with:
